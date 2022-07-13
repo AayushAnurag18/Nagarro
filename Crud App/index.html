@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6471d8b63a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body bgcolor="cyan">
+    <h1
+      class="content-center text-4xl text-center text-black-900 underline hover:font-bold"
+    >
+      To-DoList <br /><br />
+    </h1>
+    <form class="text-center font-bold" id="add_data">
+      <input
+        type="text"
+        id="inputData"
+        placeholder="Enter Text"
+        class="border-2 border-black text-center W -auto te"
+      />
+      <br /><br />
+      <button class="border-2 border-black">Add</button><br /><br />
+    </form>
+    <div class="flex flex-col justify-center items-center">
+      <ul class="list-disc hover:list-square" id="new_data"></ul>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
