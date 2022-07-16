@@ -4,7 +4,7 @@ $("#add_data").submit(function (e){
     if(data==="")return
     $("#inputData").val("")
     $("#new_data").append(
-        `<li>${data}<span class="ml-4"><i class="fa-solid fa-trash"></i></span></li>`
+        `<li><p class="flex justify-between items-center gap-3 font-semibold text-lg"><span>${data}</span><i class="fa-solid fa-trash"></i></p></li>`
     )
 })
 
