@@ -6,9 +6,43 @@
 }
 
 body {
-  background-color: aqua;
+  background-image: linear-gradient(200deg, cyan, yellow, green);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
 }
 
-#box.show{
+#box.show {
   visibility: visible;
+}
+
+.clicks {
+  background-color: rgb(192, 23, 214);
+  font-size: 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 0.4s;
+  color: aliceblue;
+  box-shadow: 0 8px 16px black;
+}
+
+.clicks:hover {
+  background-color: rgb(66, 2, 126);
+}
+.clicks:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.submission {
+  align-items: center;
+  background-color: rgb(13, 6, 14);
+  margin: 3px;
+  margin-left: 300px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 0.2s;
+  color: aliceblue;
+  box-shadow: 0 8px 16px black;
 }
