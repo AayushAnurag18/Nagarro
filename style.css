@@ -9,7 +9,7 @@ body {
 }
 .h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-decoration: underline;
   font-family: "Roboto", sans-serif;
   text-shadow: 1px 1px 1px rgb(6, 165, 27), 3px 3px 5px rgb(0, 255, 106);
@@ -52,4 +52,14 @@ li {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
   text-shadow: 1px 1px 1px rgb(6, 165, 27), 3px 3px 5px rgb(255, 0, 85);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail > a {
+  color: rgb(176, 194, 11);
+  text-decoration: none;
+  cursor: pointer;
 }
