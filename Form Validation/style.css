@@ -1,46 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-  }
-  body{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        background-image: linear-gradient(100deg,rgb(236, 68, 172) ,rgb(73, 167, 190));
-        text-align: center;
-  }
-  
-  h1{
-    margin: 1rem;
-    margin-bottom: 2rem;
-    font-weight: bolder;
-    font-size:2.5rem;
-    text-align: center;
-    text-decoration: underline;
-  }
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: linear-gradient(
+    100deg,
+    rgb(236, 68, 172),
+    rgb(73, 167, 190)
+  );
+  text-align: center;
+}
 
-  form {
-    font-weight: 600;
-    width: 30rem;
-    text-align: left;
-    margin: auto;
-    display: grid;
-    grid-template-columns:2fr 3fr ;
-    align-items: center;
-  }
+h1 {
+  margin: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
 
-  input{
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid rgb(255, 19, 19);
-    border-radius: 8px;
-    background-color: black;
-    color: white;
-  }
+form {
+  font-weight: 600;
+  width: 30rem;
+  text-align: left;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+}
 
-  button{
-      grid-column:span 2;
-      place-self: center;
-  }
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 19, 19);
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+button {
+  margin-top: 30px;
+  grid-column: span 2;
+  place-self: center;
+  background-color: rgb(125, 204, 79);
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 0.4s;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 8px 16px black;
+}
+
+button:hover {
+  background-color: rgb(32, 134, 11);
+}
+button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  color: beige;
+  transform: translateY(4px);
+}
+h5 {
+  text-align: center;
+}

@@ -11,6 +11,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/6471d8b63a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -18,8 +22,9 @@
     <div class="text-center mt-5">
       <button class="clicks">Click Me</button>
     </div>
-
     <div class="container mt-5" id="box">
+      <div class="icon"> <i class="fa-solid fa-circle-xmark"></i></div>
+     
       <div class="one">
         <h3 class="text-center pt-3">Enter Details</h3>
         <form action="#">
@@ -29,9 +34,13 @@
           </div>
           <div class="form_group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" />
+            <input type="email" required class="form-control" />
           </div>
-          <input type="button" value="Submit" class="btn btn-primary submission" />
+          <input
+            type="button"
+            value="Submit"
+            class="btn btn-primary submission"
+          />
         </form>
       </div>
     </div>

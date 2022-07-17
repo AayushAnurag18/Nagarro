@@ -3,6 +3,7 @@
   height: 300px;
   width: 700px;
   visibility: hidden;
+  position: relative;
 }
 
 body {
@@ -45,4 +46,10 @@ body {
   transition-duration: 0.2s;
   color: aliceblue;
   box-shadow: 0 8px 16px black;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  top: 7%;
+  right: 3%;
 }

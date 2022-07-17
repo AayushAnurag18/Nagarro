@@ -6,4 +6,8 @@ $(document).ready(function () {
   $(".submission").on("click", function () {
     $("#box").removeClass("show");
   });
+
+  $(".icon").on("click", function () {
+    $("#box").removeClass("show");
+  });
 });
