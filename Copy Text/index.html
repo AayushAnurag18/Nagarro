@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Text</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <marquee
+      width="100%"
+      direction="left"
+      height="100px"
+      scrollamount="14"
+      behavior="alternate"
+      ><h1>Copy To Clipboard</h1></marquee
+    >
+    <div class="one">
+      <textarea name="" id="inputuser" cols="50" rows="11">
+Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet 
+(a private network).Web development can range from developing a simple single static page of plain text to
+complex web applications, electronic businesses, and social network services. </textarea
+      >
+    </div>
+    <div class="two">
+      <button class="butn" id="btn" onclick="myFunction()">Copy</button>
+    </div>
+    <div class="three">
+      <textarea
+        name=""
+        id="texttwo"
+        cols="50"
+        rows="10"
+        placeholder="Paste Here"
+      ></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

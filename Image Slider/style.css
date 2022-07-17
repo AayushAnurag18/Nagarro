@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  background-color: black;
+  color: azure;
+  padding: 10px;
+  text-decoration: underline;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.swiper {
+  width: 80%;
+  height: 80%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(17, 15, 15);
+}
