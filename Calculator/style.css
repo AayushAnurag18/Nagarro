@@ -1,0 +1,63 @@
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  height: auto;
+  width: 420px;
+  background: rgb(175, 230, 213);
+  margin: auto;
+}
+#input {
+  grid-column: span 4;
+  margin: 5px;
+  padding-inline: 1.6rem;
+  font-size: 1.5rem;
+  background: rgb(37, 34, 34);
+  height: 5rem;
+  text-align: right;
+  color: aliceblue;
+  line-height: 96px;
+  overflow-x: auto;
+}
+#input::-webkit-scrollbar {
+  display: none;
+}
+
+.class {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+button {
+  background: rgb(37, 34, 34);
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid aliceblue;
+  border-radius: 9px;
+  cursor: pointer;
+  outline: none;
+  margin: 8px;
+}
+button:hover {
+  background: rgb(255, 115, 0);
+  color: rgb(37, 34, 34);
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  transform: translateY(4px);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+#eq {
+  grid-column: span 2;
+  font-size: 1.8rem;
+}
