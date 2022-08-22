@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %>  / Twitter</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container" id="page" data-page="<%= page %> ">
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <div class="nav-logo">
+            <span>
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li <%= page==="home"?`class=active-link`:"" %>>
+                <a href="/home">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li <%= page==="explore"?`class=active-link`:"" %>>
+                <a href="/explore">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <span>Explore</span>
+                </a>
+              </li>
+              <!-- <li <%= page==="notifications"?`class=active-link`:"" %>>
+                <a href="/notifications">
+                  <i class="fa-solid fa-bell"></i>
+                  <span>Notifications</span>
+                </a>
+              </li> -->
+              <li <%= page==="profile"?`class=active-link`:"" %>>
+                <a href="/profile">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="/auth/logout">
+                  <i class="fa-solid fa-power-off"></i>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <%- include(page) -%>
+        <div class="right-side-container">
+          <div class="card">
+            <div class="card-header">
+              <span>What's happening</span>
+            </div>
+            <div class="trending-tweets">
+              <% trendingTweets.forEach(tweet => { %>
+
+                <div class="tweet-content">
+                  <div class="tweet-header">
+                    <span class="tweet-name">
+                      <a href="/profile/<%= tweet.userId %>">
+                        <span> <%= tweet.name %> </span>
+                      </a>
+                    </span>
+                    <span class="tweet-handle">
+                      <a href="/profile/<%= tweet.userId %>">
+                        <span> @<%= tweet.username %> </span>
+                      </a>
+                    </span>
+                    <span class="tweet-time"> <%= tweet.tweetTime %> </span>
+                  </div>
+                  <div class="tweet-body">
+                    <div class="tweet-text">
+                      <span> <%= tweet.tweet %> </span>
+                    </div>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://kit.fontawesome.com/95f68113d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
